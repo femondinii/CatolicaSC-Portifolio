@@ -1,160 +1,164 @@
-## Título do Projeto: SaaS de Gestão contábil
-
+# Título do Projeto: SaaS de Gestão Contábil  
 **Nome do Estudante:** Luis Felipe Mondini  
 **Curso:** Engenharia de Software  
 **Data de Entrega:** [Data]
 
----
+## 1. Resumo
 
-## Resumo
+Este documento propõe a criação de um SaaS voltado para a gestão financeira pessoal. O objetivo do projeto é fornecer uma solução eficaz para o gerenciamento de receitas, despesas e planejamento financeiro, com ênfase em análise preditiva. Isso permitirá ao usuário tomar decisões estratégicas baseadas em previsões assertivas. O texto detalha a motivação do projeto, seus requisitos funcionais e não funcionais, a estrutura planejada e as tecnologias empregadas em sua execução e monitoramento. Também aborda métodos e táticas para assegurar segurança e escalabilidade, além dos desafios e do plano de risco previstos para a execução. O projeto aplica conhecimentos adquiridos em engenharia de software, arquitetura de sistemas e desenvolvimento full stack com boas práticas de codificação.
 
-Este documento propõe a criação de um SaaS voltado para a gestão financeira pessoal. O objetivo do projeto é fornecer uma solução eficaz para o gerenciamento de receitas, despesas e planejamento financeiro, com ênfase em análise preditiva, possibilitando que o usuário faça escolhas estratégicas baseadas em previsões assertivas. O texto detalha o motivo do projeto, seus requisitos funcionais e não funcionais, a estrutura planejada e as tecnologias empregadas para a sua execução e monitoramento. Trata de métodos e táticas para assegurar segurança e escalabilidade, bem como os desafios e o plano de risco esperado durante a execução. Aplicará os conhecimentos obtidos em engenharia de software, arquitetura de sistemas, desenvolvimento completo com boas práticas de codificação.
+## 2. Introdução
 
----
+A gestão financeira é um desafio para muitas pessoas. Com o crescente volume de transações digitais, torna-se cada vez mais necessário organizar e controlar os gastos. Muitos usuários têm dificuldade para acompanhar receitas, despesas e gerenciar orçamentos, prevendo possíveis riscos. Com a popularização de soluções em nuvem, o modelo SaaS (Software as a Service) surge como uma excelente alternativa, permitindo o controle financeiro de qualquer dispositivo conectado à internet, com segurança e usabilidade.
 
-## 1. Introdução
+Este projeto é relevante para a Engenharia de Software, pois envolve desenvolvimento full stack com práticas de segurança e escalabilidade, além do uso de modelos matemáticos preditivos via machine learning para melhorar a entrega de planejamento aos usuários. O propósito é desenvolver uma solução que facilite o gerenciamento financeiro por meio de uma plataforma intuitiva, segura, com boa arquitetura e uso de tecnologias modernas e em ascensão no mercado.
 
-A gestão financeira é um desafio para muitas pessoas, especialmente diante do crescente volume de transações digitais. A necessidade de organizar e controlar esses gastos fica cada vez mais evidente. Muitos usuários enfrentam dificuldades para acompanhar suas receitas, despesas e gerenciar os orçamentos prevendo possíveis riscos. Com a popularização de soluções hospedadas em nuvem, o modelo SaaS (Software as a Service) surge como uma excelente alternativa para o gerenciamento financeiro, permitindo que os usuários tenham controle de suas finanças de qualquer dispositivo conectado à internet, garantindo segurança e usabilidade.  
+## 3. Descrição do Projeto
 
-Esse projeto é relevante para Engenharia de Software, pois abrange conceitos de desenvolvimento full stack de sistemas, com práticas de segurança e escalabilidade, além do uso de modelos matemáticos preditivos através de machine learning para melhor experiência de entrega de planejamento aos usuários. O propósito deste projeto é desenvolver uma solução que facilite o gerenciamento financeiro por meio de uma plataforma intuitiva e segura, com uma boa arquitetura e uso de tecnologias em crescente no mercado.  
+Muitas pessoas tomam decisões financeiras sem compreender o impacto futuro de seus gastos, o que leva frequentemente ao endividamento e à dificuldade de alcançar metas. Klapper et al. (2019) apontam que a ausência de planejamento estruturado conduz a escolhas impulsivas, comprometendo a estabilidade econômica.
 
----
+O problema vai além da falta de controle: a dificuldade de transformar dados financeiros em projeções confiáveis é crítica. Métodos tradicionais, como planilhas e registros manuais, exigem disciplina, algo que nem sempre é viável no dia a dia.
 
-## 2. Descrição do Projeto
+Além disso, a fragmentação das informações financeiras dificulta uma visão unificada da saúde econômica. Muitos aplicativos exigem entrada manual constante e não consolidam os dados de forma eficiente, tornando o processo cansativo e pouco prático. A maioria das ferramentas também não considera padrões individuais de consumo ou variações de renda, limitando a personalização e impedindo que atuem como verdadeiros assistentes financeiros.
 
-Muitos indivíduos tomam decisões financeiras sem um entendimento claro do impacto futuro de seus gastos, o que frequentemente resulta em endividamento e dificuldades para atingir metas financeiras. De acordo com Klapper et al. (2019), a ausência de planejamento estruturado leva a escolhas impulsivas e compromete a estabilidade econômica pessoal. O problema não está apenas na falta de controle, mas também na dificuldade de transformar dados financeiros em projeções confiáveis. Métodos tradicionais, como planilhas e registros manuais, exigem um nível de disciplina que nem sempre é realista no cotidiano dos usuários.
+Outro obstáculo é a complexidade das informações apresentadas. Embora gráficos e tabelas sejam úteis, nem todos os usuários estão familiarizados com conceitos contábeis. Muitas ferramentas falham em transformar dados em *insights* acionáveis, dificultando a tomada de decisão e desmotivando o uso contínuo.
 
-Além disso, a fragmentação das informações financeiras dificulta uma visão unificada da saúde econômica do usuário. Aplicativos existentes geralmente demandam entrada manual constante e não oferecem uma forma eficiente de consolidar dados automaticamente. Esse processo pode se tornar cansativo e pouco prático, levando muitos a abandonarem o acompanhamento financeiro. A situação se agrava pelo fato de que a maioria das ferramentas do mercado não considera padrões individuais de consumo e variações de renda, tratando todos os usuários com a mesma abordagem generalista. Isso limita o potencial de personalização e impede que a tecnologia atue como um verdadeiro assistente financeiro adaptado à realidade de cada pessoa.
+Por fim, segurança e privacidade são essenciais. Vazamentos ou acessos não autorizados comprometem informações sensíveis e a confiança do usuário. Garantir um ambiente seguro exige boas práticas de segurança digital, muitas vezes negligenciadas.
 
-Outro obstáculo significativo é a complexidade das informações financeiras apresentadas. Embora gráficos e tabelas sejam recursos valiosos, nem todos os usuários possuem familiaridade com conceitos contábeis e econômicos. Muitas ferramentas falham ao traduzir essas informações em insights acionáveis, tornando difícil para o usuário compreender o que precisa ser ajustado e quais medidas tomar para melhorar sua saúde financeira. A barreira na interpretação dos dados faz com que muitos desistam do planejamento antes mesmo de alcançar benefícios concretos.
+Apesar de buscar solucionar esses desafios, o projeto **não** abrangerá:
+- Integração bancária automática, evitando riscos regulatórios;
+- Funcionalidades voltadas a empresas ou contabilidade corporativa;
+- Recomendações de investimento ou consultoria financeira.
 
-Por fim, a segurança e privacidade dos dados são preocupações fundamentais para qualquer sistema que lida com informações financeiras. Vazamentos de dados ou acessos não autorizados podem comprometer não apenas informações sensíveis, mas também a confiança do usuário na plataforma. Garantir um ambiente seguro e confiável exige boas práticas de segurança digital, algo que nem todas as soluções de gestão financeira priorizam adequadamente.
+O foco será exclusivo na gestão pessoal, com previsões e organização financeira sem atuar como assessor financeiro.
 
-Apesar de buscar resolver esses desafios, o projeto não abordará alguns aspectos específicos. A ferramenta não terá integração bancária automática, evitando riscos regulatórios e garantindo maior segurança ao usuário. O foco será na gestão financeira pessoal, sem funcionalidades voltadas para empresas ou contabilidade corporativa. Além disso, o sistema não oferecerá recomendações de investimentos ou consultoria financeira, limitando-se a fornecer uma visão organizada e preditiva das finanças do usuário, sem atuar como um assessor financeiro.
+## 4. Especificação Técnica
 
----
+### 4.1. Requisitos de Software
 
-## 3. Especificação Técnica
+#### 4.1.1. Requisitos Funcionais
 
-### 3.1 Requisitos de Software
+**Cadastro e Login de Usuário:**
+- RF1: Cadastro de usuários;
+- RF2: Autenticação com Google;
+- RF3: Autenticação via JWT para sessões seguras;
+- RF4: Edição e exclusão de conta;
 
-#### 3.1.1 Requisitos Funcionais
+**Gestão de Receitas e Despesas:**
+- RF5: Registro detalhado de despesas (data, valor, categoria, descrição);
+- RF6: Categorização de transações (ex: alimentação, transporte, lazer);
+- RF7: Edição ou exclusão de transações;
+- RF8: Visão geral do fluxo de caixa (receitas, despesas, saldo);
+- RF9: Gráficos e relatórios mensais, trimestrais e anuais;
+- RF10: Criação de categorias personalizadas;
+- RF11: Histórico completo de transações com filtros;
 
-- Cadastro e Login de usuário:
-  - RF1: Deve realizar cadastro de usuários;
-  - RF2: Deve realizar autenticação com o Google;
-  - RF3: Implementação de autenticação JWT para sessões mais seguras;
-  - RF4: Deve permitir a alteração dos dados da conta e exclusão da mesma;
+**Planejamento Financeiro:**
+- RF12: Definição de metas (ex: economizar valor, quitar dívida);
+- RF13: Sugestões de planejamento com base nas movimentações;
 
-- Gestão de receitas e despesas:
-  - RF5: Poderá registrar despesas de maneira detalhada (data, valor, categoria, descrição);
-  - RF6: Deve categorizar transações pelo tipo (Ex: alimentação, transporte, lazer, outros);
-  - RF7: Permitir editar ou excluir transações registradas;
-  - RF8: Visão geral do fluxo de caixa do usuário;
-  - RF9: Gráficos e relatórios dinâmicos sobre o fluxo de caixa (mensal, trimestral e anual);
-  - RF10: Personalização de categorias;
-  - RF11: Histórico completo de transações com filtros;
+**Análise Preditiva:**
+- RF14: Previsões de fluxo de caixa com IA;
+- RF15: Recomendações de ajustes baseadas em histórico de consumo;
 
-- Planejamento financeiro:
-  - RF12: Definição de metas financeiras;
-  - RF13: Sugestão de planejamento com base nas movimentações;
+**Alertas e Notificações:**
+- RF16: Notificações sobre metas, despesas fora do padrão, contas a vencer;
 
-- Análise preditiva:
-  - RF14: IA para previsão de fluxo de caixa;
-  - RF15: Recomendação de ajustes orçamentários;
+#### 4.1.2. Requisitos Não-Funcionais
 
-- Alertas e notificações:
-  - RF16: Notificações sobre metas, despesas fora do padrão, vencimentos e alertas relevantes;
+**Escalabilidade:**
+- RNF1: Utilização do Google Cloud para escalar a aplicação;
 
-#### 3.1.2 Requisitos Não-Funcionais
+**Desempenho:**
+- RNF2: Consultas otimizadas no ORM do Django;
 
-- **Escalabilidade:**
-  - RNF1: Uso do Google Cloud;
+**Segurança:**
+- RNF4: Criptografia de ponta a ponta;
+- RNF5: Autenticação via JWT;
+- RNF6: Proteção contra SQL Injection, XSS, CSRF;
+- RNF7: Armazenamento de senhas com bcrypt;
 
-- **Desempenho:**
-  - RNF2: Consultas otimizadas via ORM Django;
+**Usabilidade:**
+- RNF8: Front-end responsivo em ReactJS com foco em acessibilidade e legibilidade;
 
-- **Segurança:**
-  - RNF4: Criptografia de ponta-a-ponta;
-  - RNF5: Autenticação JWT;
-  - RNF6: Proteção contra SQL Injection, XSS, CSRF;
-  - RNF7: Armazenamento seguro de senhas (bcrypt);
+**Monitoramento:**
+- RNF9: Monitoramento e logs via Datadog;
 
-- **Usabilidade:**
-  - RNF8: Front-end responsivo em ReactJS;
+**Compatibilidade:**
+- RNF10: Compatibilidade com navegadores modernos (Chrome, Firefox, Edge, Safari);
 
-- **Monitoramento e Logs:**
-  - RNF9: Logs e monitoramento via Datadog;
+**Manutenção e Desenvolvimento:**
+- RNF11: Código bem documentado;
+- RNF12: Testes unitários e de integração;
 
-- **Compatibilidade:**
-  - RNF10: Suporte a navegadores modernos;
+**Integração com IA:**
+- RNF13: IA desenvolvida em Python com aprendizado contínuo;
+- RNF14: Uso de machine learning para previsões financeiras;
+- RNF15: Cálculos de IA devem ser eficientes para não comprometer o desempenho;
 
-- **Desenvolvimento e Manutenção:**
-  - RNF11: Código documentado;
-  - RNF12: Testes unitários e integração;
+**Licenciamento e Conformidade:**
+- RNF16: Conformidade com a LGPD;
+- RNF17: Consentimento explícito e transparência no uso de dados;
 
-- **Integração com IA:**
-  - RNF13: IA desenvolvida em Python com aprendizado contínuo;
-  - RNF14: Uso de ML para previsões financeiras;
-  - RNF15: Cálculos de IA sem comprometer o desempenho;
+**Representação dos Requisitos:**
+- Diagrama de Casos de Uso (UML);
 
-- **Licenciamento e Conformidade:**
-  - RNF16: Conformidade com LGPD;
-  - RNF17: Consentimento e transparência no uso dos dados.
+### 4.2. Considerações de Design
 
-### 3.2 Considerações de Design
+- Discussão das decisões de design e alternativas consideradas;
+- Visão Inicial da Arquitetura: descrição dos componentes e suas interconexões;
+- Padrões Utilizados: MVC, Microserviços;
+- Modelos C4: níveis de Contexto, Contêineres, Componentes e Código;
 
-- Justificativa das escolhas de design
-- Arquitetura baseada em componentes e microserviços
-- Uso de modelos C4 (Contexto, Contêineres, Componentes, Código)
+### 4.3. Stack Tecnológica
 
-### 3.3 Stack Tecnológica
+#### 4.3.1. Linguagens
 
-- **Back-end:** Django + Django Rest Framework
-- **Front-end:** ReactJS
-- **Bibliotecas:** Pandas, Scikit-learn, Prophet, QuantLib, Plotly, Dash
-- **Banco de dados:** PostgreSQL
-- **Monitoramento:** Datadog
-- **CI/CD:** GitHub Actions + Docker
-- **Gerenciamento:** Jira, SonarCloud
+- Back-end: Django (Python) pela robustez, segurança, integração com bibliotecas de IA e construção eficiente de APIs;
+- Front-end: ReactJS, devido à sua componentização, alta reutilização e integração fluida com APIs;
 
-### 3.4 Considerações de Segurança
+#### 4.3.2. Bibliotecas
 
-- Criptografia
-- Práticas de proteção contra vulnerabilidades
-- Conformidade com a LGPD
+- Pandas & Scikit-learn: manipulação de dados e criação de modelos preditivos;
+- Prophet: previsão de séries temporais com sazonalidade;
+- QuantLib: cálculos financeiros avançados;
+- Plotly & Dash: dashboards interativos;
+- Django Rest Framework: APIs escaláveis;
 
----
+#### 4.3.3. Ferramentas de Desenvolvimento e Gestão
 
-## 4. Próximos Passos
+- SonarCloud: análise contínua de qualidade do código;
+- Datadog: monitoramento em tempo real e alertas;
+- Jira: organização e gestão ágil de tarefas;
+- GitHub + GitHub Actions: versionamento, CI/CD automatizado;
+- Docker: containerização da aplicação para consistência entre ambientes;
 
-- Prototipação inicial e validação com usuários
-- Início da implementação dos módulos principais
-- Testes e integração contínua
-- Avaliação dos resultados da primeira fase (Portfólio I)
-- Refinamento e entrega final (Portfólio II)
+#### 4.3.4. Banco de Dados
 
----
+- PostgreSQL: robustez, confiabilidade, suporte a transações ACID e consultas complexas;
 
-## 5. Referências
+### 4.4. Considerações de Segurança
 
-- https://www.treasy.com.br/blog/graficos-financeiros/
-- https://blog.nubank.com.br/planejamento-financeiro-pessoal/
-- https://wise.com/br/blog/planejamento-financeiro-com-ia
-- https://www.luiztools.com.br/post/12-dicas-para-construcao-de-um-bom-saas/
+- Análise das vulnerabilidades mais prováveis e estratégias para mitigação, com foco em segurança de dados, autenticação, criptografia e conformidade legal;
+
+## 5. Próximos Passos
+
+Planejamento das próximas etapas, incluindo cronograma para Portfólio I e II;
+
+## 6. Referências
+
+- https://www.treasy.com.br/blog/graficos-financeiros/  
+- https://blog.nubank.com.br/planejamento-financeiro-pessoal/  
+- https://wise.com/br/blog/planejamento-financeiro-com-ia  
+- https://www.luiztools.com.br/post/12-dicas-para-construcao-de-um-bom-saas/  
 - https://journalmediacritiques.com/index.php/jmc/article/view/85
 
----
+## 7. Apêndices (Opcionais)
 
-## 6. Apêndices (Opcionais)
+Informações complementares, dados ou discussões que extrapolem o corpo principal do texto;
 
-- Dados de suporte e gráficos adicionais
+## 8. Avaliações de Professores
 
----
-
-## 7. Avaliações de Professores
-
-- Considerações Professor/a:
-- Considerações Professor/a:
-- Considerações Professor/a:
-
+- Considerações Professor(a):  
+- Considerações Professor(a):  
+- Considerações Professor(a):
