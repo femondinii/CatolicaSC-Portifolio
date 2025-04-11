@@ -5,13 +5,13 @@
 
 ## 1. Resumo
 
-Este documento propõe a criação de um SaaS voltado para a gestão financeira pessoal. O objetivo do projeto é fornecer uma solução eficaz para o gerenciamento de receitas, despesas e planejamento financeiro, com ênfase em análise preditiva. Isso permitirá ao usuário tomar decisões estratégicas baseadas em previsões assertivas. O texto detalha a motivação do projeto, seus requisitos funcionais e não funcionais, a estrutura planejada e as tecnologias empregadas em sua execução e monitoramento. Também aborda métodos e táticas para assegurar segurança e escalabilidade, além dos desafios e do plano de risco previstos para a execução. O projeto aplica conhecimentos adquiridos em engenharia de software, arquitetura de sistemas e desenvolvimento full stack com boas práticas de codificação.
+Este projeto propõe a criação de um SaaS voltado para a gestão financeira pessoal. A proposta visa oferecer aos usuários uma ferramenta prática e acessível para controle de receitas, despesas e planejamento financeiro, com o apoio de recursos preditivos baseados em machine learning. A solução incorpora práticas de engenharia de software, arquitetura escalável, segurança da informação e usabilidade, promovendo uma experiência confiável e personalizada. Além disso, aborda os desafios técnicos enfrentados, os métodos adotados para mitigação de riscos e as tecnologias aplicadas ao longo do projeto.
 
 ## 2. Introdução
 
-A gestão financeira é um desafio para muitas pessoas. Com o crescente volume de transações digitais, torna-se cada vez mais necessário organizar e controlar os gastos. Muitos usuários têm dificuldade para acompanhar receitas, despesas e gerenciar orçamentos, prevendo possíveis riscos. Com a popularização de soluções em nuvem, o modelo SaaS (Software as a Service) surge como uma excelente alternativa, permitindo o controle financeiro de qualquer dispositivo conectado à internet, com segurança e usabilidade.
+Com o crescimento das transações digitais e a complexidade crescente na gestão das finanças pessoais, torna-se cada vez mais necessário o uso de soluções tecnológicas que auxiliem o usuário a manter o controle financeiro e tomar decisões estratégicas. No entanto, ferramentas tradicionais, como planilhas e aplicativos genéricos, frequentemente exigem esforço contínuo e carecem de personalização. A falta de previsibilidade e dificuldade na interpretação de dados financeiros prejudica a tomada de decisões conscientes e a adesão ao uso dessas ferramentas.
 
-Este projeto é relevante para a Engenharia de Software, pois envolve desenvolvimento full stack com práticas de segurança e escalabilidade, além do uso de modelos matemáticos preditivos via machine learning para melhorar a entrega de planejamento aos usuários. O propósito é desenvolver uma solução que facilite o gerenciamento financeiro por meio de uma plataforma intuitiva, segura, com boa arquitetura e uso de tecnologias modernas e em ascensão no mercado.
+Nesse contexto, uma aplicação SaaS (Software como Serviço) oferece uma alternativa escalável e segura, permitindo acesso multiplataforma e centralização das informações financeiras. O projeto se destaca por aplicar conceitos da engenharia de software moderna, desenvolvimento full stack, modelagem preditiva e boas práticas de arquitetura para entregar uma plataforma intuitiva, com foco em acessibilidade, segurança e análise inteligente dos dados com machine learning.
 
 ## 3. Descrição do Projeto
 
@@ -73,32 +73,32 @@ O foco será exclusivo na gestão pessoal, com previsões e organização financ
 - RNF2: Consultas otimizadas no ORM do Django;
 
 **Segurança:**
-- RNF4: Criptografia de ponta a ponta;
-- RNF5: Autenticação via JWT;
-- RNF6: Proteção contra SQL Injection, XSS, CSRF;
-- RNF7: Armazenamento de senhas com bcrypt;
+- RNF3: Criptografia de ponta a ponta;
+- RNF4: Autenticação via JWT;
+- RNF5: Proteção contra SQL Injection, XSS, CSRF;
+- RNF6: Armazenamento de senhas com bcrypt;
 
 **Usabilidade:**
-- RNF8: Front-end responsivo em ReactJS com foco em acessibilidade e legibilidade;
+- RNF7: Front-end responsivo em ReactJS com foco em acessibilidade e legibilidade;
 
 **Monitoramento:**
-- RNF9: Monitoramento e logs via Datadog;
+- RNF8: Monitoramento e logs via Datadog;
 
 **Compatibilidade:**
-- RNF10: Compatibilidade com navegadores modernos (Chrome, Firefox, Edge, Safari);
+- RNF9: Compatibilidade com navegadores modernos (Chrome, Firefox, Edge, Safari);
 
 **Manutenção e Desenvolvimento:**
-- RNF11: Código bem documentado;
-- RNF12: Testes unitários e de integração;
+- RNF10: Código bem documentado;
+- RNF11: Testes unitários e de integração;
 
 **Integração com IA:**
-- RNF13: IA desenvolvida em Python com aprendizado contínuo;
-- RNF14: Uso de machine learning para previsões financeiras;
-- RNF15: Cálculos de IA devem ser eficientes para não comprometer o desempenho;
+- RNF12: IA desenvolvida em Python com aprendizado contínuo;
+- RNF13: Uso de machine learning para previsões financeiras;
+- RNF14: Cálculos de IA devem ser eficientes para não comprometer o desempenho;
 
 **Licenciamento e Conformidade:**
-- RNF16: Conformidade com a LGPD;
-- RNF17: Consentimento explícito e transparência no uso de dados;
+- RNF15: Conformidade com a LGPD;
+- RNF16: Consentimento explícito e transparência no uso de dados;
 
 **Representação dos Requisitos:**
 - Diagrama de Casos de Uso (UML);
