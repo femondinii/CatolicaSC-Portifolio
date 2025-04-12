@@ -139,7 +139,21 @@ O foco será exclusivo na gestão pessoal, com previsões e organização financ
 
 ### 4.4. Considerações de Segurança
 
-- Análise das vulnerabilidades mais prováveis e estratégias para mitigação, com foco em segurança de dados, autenticação, criptografia e conformidade legal;
+Embora o sistema não integre diretamente com instituições bancárias nem processe transações reais ou dados de cartões de crédito, a segurança da informação continua sendo uma prioridade. Os dados inseridos manualmente pelos usuários, como receitas, despesas e metas financeiras, ainda são sensíveis e devem ser protegidos de acessos indevidos.
+
+**Para garantir a integridade e confidencialidade dessas informações, o sistema adotará:**
+
+- Autenticação baseada em JWT, assegurando que apenas usuários autenticados possam acessar suas informações;
+
+- Armazenamento de senhas com hash e salt utilizando o algoritmo bcrypt;
+
+- Proteção contra ataques comuns, como SQL Injection, XSS e CSRF, com uso de boas práticas e ferramentas do Django;
+
+- Monitoramento constante de eventos e logs de segurança, facilitando auditorias e a identificação de atividades suspeitas;
+
+- Práticas de conformidade com a LGPD, incluindo consentimento explícito para uso de dados e transparência sobre o tratamento das informações.
+  
+Essas medidas garantem um ambiente seguro mesmo com a simplicidade do modelo de inserção manual, reforçando a confiabilidade da aplicação.
 
 ## 5. Próximos Passos
 
@@ -158,7 +172,3 @@ Planejamento das próximas etapas, incluindo cronograma para Portfólio I e II;
 Informações complementares, dados ou discussões que extrapolem o corpo principal do texto;
 
 ## 8. Avaliações de Professores
-
-- Considerações Professor(a):  
-- Considerações Professor(a):  
-- Considerações Professor(a):
